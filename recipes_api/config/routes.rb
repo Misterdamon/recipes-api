@@ -1,12 +1,9 @@
 RecipesApi::Application.routes.draw do
 
   root :to => 'applications#index'
+  get '/api/v1/recipes' => 'recipes#index', as: 'recipes'
 
-  namespace :api do
-    namespace :v1 do
-      resources :recipes, only: [:index, :show]
-    end
-  end
+  get '/api/v1/recipes/:id' => 'recipes#show', as: 'recipe'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
