@@ -1,9 +1,10 @@
 RecipesApi::Application.routes.draw do
 
   root :to => 'applications#index'
-  get '/api/v1/recipes' => 'recipes#index', as: 'recipes'
+  get '/api/v1/recipes' => 'recipes#index', as: 'recipes', defaults: {format: :json}
 
-  get '/api/v1/recipes/:id' => 'recipes#show', as: 'recipe'
+  get '/api/v1/recipes/:id' => 'recipes#show', as: 'recipe', defaults: {format: :json}
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
