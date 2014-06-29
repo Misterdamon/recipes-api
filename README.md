@@ -18,28 +18,29 @@ We have provided users with 2 major end points. The key previously generated wil
 |-----------|-------------|
 | **GET** '/api/v1/your_api_key/recipes' | Returns a list of 20 random recipes |
 
-####Example response
+####Example Response
 
 <pre>
 [ {
-		"id":371,
-		"title":"Chicken fin strange gravy",
-		"content":"Pig salsify bonbon toffee macaroon gummies.",
-		"created_at":"2014-06-29T20:10:59Z",
-		"updated_at":"2014-06-29T20:10:59Z"
-	},
-	{
-		"id":99,
-		"title":"Cat arm happy donut",
-		"content":"Oat beef ribs tigernut tart asparagus.",
-		"created_at":"2014-06-29T00:13:19Z",
-		"updated_at":"2014-06-29T00:13:19Z"
-	} ] </pre>
+	"id":371,
+	"title":"Chicken fin strange gravy",
+	"content":"Pig salsify bonbon toffee macaroon gummies.",
+	"created_at":"2014-06-29T20:10:59Z",
+	"updated_at":"2014-06-29T20:10:59Z"
+},
+{
+	"id":99,
+	"title":"Cat arm happy donut",
+	"content":"Oat beef ribs tigernut tart asparagus.",
+	"created_at":"2014-06-29T00:13:19Z",
+	"updated_at":"2014-06-29T00:13:19Z"
+}  ... ] </pre>
 
 | End Point | Description |
 |-----------|-------------|
 |	**GET** '/api/v1/your_api_key/recipes/:id' | Returns information for the recipe specified by the id parameter |
 
+####Example Response :
 <pre>
 {
 	"id":59,
