@@ -7,8 +7,7 @@ This is an API that has been created to query recipes.
 ##Getting started!
 ------------------
 
-The first thing you'll need to do is visit our root directory and create an account. After creation you will be redirected to a keygen page. By clicking the link, a new key 20 digit key will be created.  it will look similar to <code>a139xxxxx422exxxx89e</code>Do not lose this!
-------------------
+The first thing you'll need to do is visit our root directory and create an account. After creation you will be redirected to a keygen page. By clicking the link, a new key 20 digit key will be created.  it will look similar to <code>a139xxxxx422exxxx89e</code> Do not lose this!
 
 
 ##End points
