@@ -12,7 +12,7 @@ class UsersController < ApplicationController
 		@user.save
 		session[:id] = @user.id
 		if session[:id]
-			redirect_to api_v1_new_key_path
+			redirect_to create_key_path
 		else
 			redirect_to new_user_path
 		end
@@ -30,7 +30,7 @@ class UsersController < ApplicationController
 		@user = User.find(params[:username])
 		if params[:password_hash] == @user.password
 			session[:id] = @user.id
-			redirect_to api_v1_new_key_path
+			redirect_to create_key_path
 		else
 			render :signin
 		end
