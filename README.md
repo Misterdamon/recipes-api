@@ -42,6 +42,7 @@ We have provided users with 2 major end points. The key previously generated wil
 | **GET** '/api/v1/your_api_key/recipes/:id' | Returns information for the recipe specified by the id parameter |
 
 ####Example Response :
+
 <pre>
 {
 	"id":59,
@@ -56,6 +57,7 @@ We have provided users with 2 major end points. The key previously generated wil
 | **GET** '/api/v1/your_api_key/recipes/search/term1+term2' | Returns a list of recipes that contain keywords |
 
 ####Example response :
+
 <pre>
 [{
 	"id":5,
