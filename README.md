@@ -62,7 +62,7 @@ We have provided users with 2 major end points. The key previously generated wil
 [{
 	"id":5,
 	"title":"Human thigh life sausage",
-	"content":"Silver beet capicola rock melon candy drumstick ground round azuki bean capicola tenderloin corn azuki bean prosciutto pastrami fruitcake zucchini pastrami plum cupcake pig salami coriander kohlrabi chickweed pancetta chupa chup pancetta caramels pancetta landjaeger grape marshmallow cookie azuki bean jowl potato filet mignon apple pie caramels tail watercress sesame snaps pig chocolate brownie drumstick filet mignon sirloin kohlrabi pastrami salsify lettuce tail gummi bears cupcake tigernut gingerbread biltong landjaeger drumstick bonbon",
+	"content":"Silver beet capicola rock melon candy",
 	"created_at":"2014-06-30T05:52:13Z",
 	"updated_at":"2014-06-30T05:52:13Z"
 }, ... ]
