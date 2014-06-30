@@ -49,3 +49,18 @@ We have provided users with 2 major end points. The key previously generated wil
 	"created_at":"2014-06-29T00:13:19Z",
 	"updated_at":"2014-06-29T00:13:19Z"
 } </pre>
+
+| End Point | Description |
+|-----------|-------------|
+| **GET** '/api/v1/your_api_key/recipes/search/term1+term2' | Returns a list of recipes that contain keywords |
+
+####Example response :
+<pre>
+[{
+	"id":5,
+	"title":"Human thigh life sausage",
+	"content":"Silver beet capicola rock melon candy drumstick ground round azuki bean capicola tenderloin corn azuki bean prosciutto pastrami fruitcake zucchini pastrami plum cupcake pig salami coriander kohlrabi chickweed pancetta chupa chup pancetta caramels pancetta landjaeger grape marshmallow cookie azuki bean jowl potato filet mignon apple pie caramels tail watercress sesame snaps pig chocolate brownie drumstick filet mignon sirloin kohlrabi pastrami salsify lettuce tail gummi bears cupcake tigernut gingerbread biltong landjaeger drumstick bonbon",
+	"created_at":"2014-06-30T05:52:13Z",
+	"updated_at":"2014-06-30T05:52:13Z"
+}, ... ]
+</pre>
