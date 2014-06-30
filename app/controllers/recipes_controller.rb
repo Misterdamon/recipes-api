@@ -27,4 +27,13 @@ class RecipesController < ApplicationController
       end
     end
   end
+
+  def search
+    puts params[:terms]
+    terms = params[:terms].split("+")
+    @recipes = Recipe.find(:all, :conditions => ['title LIKE ?', "%#{terms[0]}%#{terms[1]}"])
+    respond_to do |format|
+        format.json { render :json => @recipes.map(&:attributes) }
+    end
+  end
 end

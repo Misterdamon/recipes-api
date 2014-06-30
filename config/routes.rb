@@ -3,16 +3,19 @@ RecipesApi::Application.routes.draw do
 
   root :to => 'users#new'
   get '/signin' => 'users#signin_attempt', as: "signin"
-  post '/logout' => 'users#logout', as: 'logout'
-  put '/users' => 'users#create', as: 'create_user'
-    
-    get '/api/v1/' => 'users#new'
-    get '/api/v1/:api_key/recipes' => 'recipes#index', as: 'recipes', defaults: {format: :json}
+  post '/api/v1/logout' => 'users#logout', as: 'logout'
+  post '/api/v1/users' => 'users#create', as: 'create_user'
+  get '/api/v1/users/new' => 'users#new', as: 'new_user'
+  post '/api/v1/users/create' => 'users#create', as: 'create_user'
+  get '/api/v1/' => 'users#new'
 
-    get '/api/v1/:api_key/recipes/:id' => 'recipes#show', as: 'recipe', defaults: {format: :json}
-    get '/api/v1/auth/keys' => 'keys#new', as: 'new_key'
-    post '/api/v1/auth/keys' => 'keys#generate', as: 'create_key'
-    get '/api/v1/auth/keys/:id' => 'keys#show', as: 'key'
+  get '/api/v1/:api_key/recipes' => 'recipes#index', as: 'recipes', defaults: {format: :json}
+  get '/api/v1/:api_key/recipes/:id' => 'recipes#show', as: 'recipe', defaults: {format: :json}
+  get '/api/v1/auth/keys' => 'keys#new', as: 'new_key'
+  post '/api/v1/auth/keys' => 'keys#generate', as: 'create_key'
+  get '/api/v1/auth/keys/:id' => 'keys#show', as: 'key'
+  get '/api/v1/:api_key/recipes/search/:terms' => 'recipes#search', as: 'search', defaults: {format: :json}
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

@@ -3,6 +3,7 @@ class User < ActiveRecord::Base
 	# validates :username, presence: true, uniqueness: true
 	validates :password_hash, presence: true
 	attr_accessible :username, :password_hash
+  has_many :keys
 	include BCrypt
 
   def password
