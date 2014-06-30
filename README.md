@@ -38,7 +38,7 @@ We have provided users with 2 major end points. The key previously generated wil
 
 | End Point | Description |
 |-----------|-------------|
-|	**GET** '/api/v1/your_api_key/recipes/:id' | Returns information for the recipe specified by the id parameter |
+| **GET** '/api/v1/your_api_key/recipes/:id' | Returns information for the recipe specified by the id parameter |
 
 ####Example Response :
 <pre>
