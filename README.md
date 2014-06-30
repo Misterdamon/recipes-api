@@ -37,6 +37,7 @@ We have provided users with 2 major end points. The key previously generated wil
 }  ... ] </pre>
 
 
+
 | End Point | Description |
 |-----------|-------------|
 | **GET** '/api/v1/your_api_key/recipes/:id' | Returns information for the recipe specified by the id parameter |
@@ -51,6 +52,8 @@ We have provided users with 2 major end points. The key previously generated wil
 	"created_at":"2014-06-29T00:13:19Z",
 	"updated_at":"2014-06-29T00:13:19Z"
 } </pre>
+
+
 
 | End Point | Description |
 |-----------|-------------|
